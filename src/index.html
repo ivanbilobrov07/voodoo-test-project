@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Page title</title>
+    <link href="./styles/style.css" rel="stylesheet" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body class="text-[12px] xl:text-[14px]">
+    <div
+      class="fixed z-10 top-0 left-0 right-0 h-[33px] xl:h-[38px] p-[9px] bg-primaryText"
+    >
+      <div class="container">
+        <div class="relative flex items-center text-white">
+          <p
+            class="flex-1 text-[10px] sm:text-[12px] xl:text-[14px] text-center"
+          >
+            Sign up and get 20% off to your first order.<span
+              class="font-medium underline"
+            >
+              Sign Up Now</span
+            >
+          </p>
+          <button class="hidden xl:block">
+            <svg width="20" height="20">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <header class="mb-[20px] mt-[33px] xl:mb-[24] xl:mt-[36px]">
+      <div class="container">
+        <div
+          class="py-[24px] flex gap-[16px] xl:gap-[40px] items-center border-b border-grey_10"
+        >
+          <button class="xl:hidden">
+            <svg width="24" height="24">
+              <use href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <a
+            href="#"
+            class="text-[19px] font-black sm:text-[25px] xl:text-[32px]"
+            >VOODOO.CO</a
+          >
+          <nav class="hidden xl:block">
+            <ul class="flex gap-[24px] text-[16px]">
+              <li>
+                <a href="#" class="flex items-center gap-[4px]"
+                  >Shop
+                  <svg width="16" height="16">
+                    <use href="./images/sprite.svg#icon-dropdown"></use></svg
+                ></a>
+              </li>
+              <li><a href="#">On Sale</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Brands</a></li>
+            </ul>
+          </nav>
+          <div class="flex gap-[12px] xl:gap-[14px] items-center ml-auto">
+            <div
+              class="hidden xl:block relative w-[510px] text-grey_40 mr-[26px]"
+            >
+              <input
+                type="text"
+                class="bg-background py-[12px] pr-[16px] block rounded-[62px] pl-[52px] w-full"
+                placeholder="Search for products..."
+              />
+              <button class="absolute top-[12px] left-[16px]">
+                <svg width="24" height="24">
+                  <use href="./images/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </div>
+            <button class="xl:hidden">
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+            <button>
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#icon-cart"></use>
+              </svg>
+            </button>
+            <button>
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mb-[14px] xl:mb-[26px]">
+      <div class="container">
+        <div class="flex gap-[4px] items-center text-[14px] xl:text-[16px]">
+          <span class="text-grey_60">Home</span>
+          <svg height="14" width="14">
+            <use href="./images/sprite.svg#icon-dropright"></use>
+          </svg>
+          <span class="ml-[2px]">Casual</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-[50px] xl:mb-[80px]">
+      <div class="container">
+        <div class="xl:flex gap-[20px]">
+          <aside class="xl:basis-[297px]">
+            <form
+              class="hidden xl:block py-[20px] px-[24px] rounded-[20px] border border-grey_10"
+            >
+              <div class="pb-[24px] mb-[24px] border-b border-grey_10">
+                <div
+                  class="flex justify-between items-center pb-[24px] mb-[24px] border-b border-grey_10"
+                >
+                  <h3 class="text-[20px] font-bold">Filters</h3>
+                  <button>
+                    <svg width="24" height="24">
+                      <use href="./images/sprite.svg#icon-options"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="flex flex-col gap-[20px]">
+                  <li>
+                    <button
+                      class="flex justify-between w-full items-center text-[16px] text-grey_60"
+                    >
+                      <span>T-shirts</span>
+                      <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-dropright"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="flex justify-between w-full items-center text-[16px] text-grey_60"
+                    >
+                      <span>Shorts</span>
+                      <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-dropright"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="flex justify-between w-full items-center text-[16px] text-grey_60"
+                    >
+                      <span>Shirts</span>
+                      <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-dropright"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="flex justify-between w-full items-center text-[16px] text-grey_60"
+                    >
+                      <span>Hoodie</span>
+                      <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-dropright"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="flex justify-between w-full items-center text-[16px] text-grey_60"
+                    >
+                      <span>Jeans</span>
+                      <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-dropright"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="pb-[24px] mb-[24px] border-b border-grey_10">
+                <div class="flex justify-between items-center mb-[20px]">
+                  <h3 class="text-[20px] font-bold">Price</h3>
+                  <button>
+                    <svg width="16" height="16">
+                      <use href="./images/sprite.svg#icon-dropup"></use>
+                    </svg>
+                  </button>
+                </div>
+                <input type="range" class="w-full" />
+              </div>
+              <div class="pb-[24px] mb-[24px] border-b border-grey_10">
+                <div class="flex justify-between items-center mb-[20px]">
+                  <h3 class="text-[20px] font-bold">Colors</h3>
+                  <button>
+                    <svg width="16" height="16">
+                      <use href="./images/sprite.svg#icon-dropup"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="flex flex-wrap gap-x-[15.5px] gap-y-[16px]">
+                  <li>
+                    <button>
+                      <svg width="37" height="37">
+                        <use href="./images/sprite.svg#icon-circle-green"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <svg width="37" height="37">
+                        <use href="./images/sprite.svg#icon-circle-red"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <svg width="37" height="37">
+                        <use
+                          href="./images/sprite.svg#icon-circle-yellow"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <svg width="37" height="37">
+                        <use
+                          href="./images/sprite.svg#icon-circle-orange"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <svg width="37" height="37">
+                        <use href="./images/sprite.svg#icon-circle-aqua"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <svg width="37" height="37">
+                        <use href="./images/sprite.svg#icon-circle-blue"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <svg width="37" height="37">
+                        <use
+                          href="./images/sprite.svg#icon-circle-purple"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <svg width="37" height="37">
+                        <use href="./images/sprite.svg#icon-circle-pink"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <svg width="37" height="37">
+                        <use href="./images/sprite.svg#icon-circle-white"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <svg width="37" height="37">
+                        <use href="./images/sprite.svg#icon-circle-black"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="pb-[24px] mb-[24px] border-b border-grey_10">
+                <div class="flex justify-between items-center mb-[20px]">
+                  <h3 class="text-[20px] font-bold">Size</h3>
+                  <button>
+                    <svg width="16" height="16">
+                      <use href="./images/sprite.svg#icon-dropup"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="flex flex-wrap gap-[8px] text-grey_40">
+                  <li>
+                    <button
+                      class="block px-[20px] py-[10px] bg-background rounded-[62px]"
+                    >
+                      XX-Small
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="block px-[20px] py-[10px] bg-background rounded-[62px]"
+                    >
+                      X-Small
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="block px-[20px] py-[10px] bg-background rounded-[62px]"
+                    >
+                      Small
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="block px-[20px] py-[10px] bg-background rounded-[62px]"
+                    >
+                      Medium
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="block px-[20px] py-[10px] bg-background rounded-[62px]"
+                    >
+                      Large
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="block px-[20px] py-[10px] bg-background rounded-[62px]"
+                    >
+                      X-Large
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="block px-[20px] py-[10px] bg-background rounded-[62px]"
+                    >
+                      XX-Large
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="block px-[20px] py-[10px] bg-background rounded-[62px]"
+                    >
+                      3X-Large
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="block px-[20px] py-[10px] bg-background rounded-[62px]"
+                    >
+                      4X-Large
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-[24px]">
+                <div class="flex justify-between items-center mb-[20px]">
+                  <h3 class="text-[20px] font-bold">Dress Style</h3>
+                  <button>
+                    <svg width="16" height="16">
+                      <use href="./images/sprite.svg#icon-dropup"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="flex flex-col gap-[20px]">
+                  <li>
+                    <button
+                      class="flex justify-between w-full items-center text-[16px] text-grey_60"
+                    >
+                      <span>T-Casual</span>
+                      <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-dropright"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="flex justify-between w-full items-center text-[16px] text-grey_60"
+                    >
+                      <span>Formal</span>
+                      <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-dropright"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="flex justify-between w-full items-center text-[16px] text-grey_60"
+                    >
+                      <span>Party</span>
+                      <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-dropright"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="flex justify-between w-full items-center text-[16px] text-grey_60"
+                    >
+                      <span>Gym</span>
+                      <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-dropright"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="submit"
+                class="flex items-center text-white mb-[25px] justify-center text-[14px] bg-primaryText rounded-[62px] font-medium w-full py-[15px]"
+              >
+                Apply Filter
+              </button>
+            </form>
+          </aside>
+
+          <section class="xl:basis-[925px]">
+            <div
+              class="flex gap-[5px] xl:gap-[12px] items-baseline mb-[30px] xl:mb-[18px] xl:items-center flex-wrap sm:flex-nowrap"
+            >
+              <h2
+                class="font-bold text-[24px] xl:text-[32px] xl:mr-auto w-full sm:w-auto"
+              >
+                Casual
+              </h2>
+              <p class="text-grey_60 xl:text-[16px]">
+                Showing 1-10 of 100 Products
+              </p>
+              <button
+                class="w-[32px] h-[32px] rounded-full bg-[#F0F0F0] ml-auto flex items-center justify-center xl:hidden"
+              >
+                <svg width="16" height="16">
+                  <use href="./images/sprite.svg#icon-options"></use>
+                </svg>
+              </button>
+              <p class="hidden xl:flex text-[16px] text-grey_60 gap-[4px]">
+                <span>Sort by:</span>
+                <button class="flex items-center gap-[4px] text-primaryText">
+                  <span>Most Popular</span>
+                  <svg width="16" height="16">
+                    <use href="./images/sprite.svg#icon-dropdown"></use>
+                  </svg>
+                </button>
+              </p>
+            </div>
+
+            <ul
+              id="products-list"
+              class="flex mb-[20px] flex-wrap justify-center gap-y-[26px] gap-x-[14px] md:gap-x-[26px] border-b border-grey_10 pb-[26px] xl:gap-x-[20px] xl:gap-y-[38px]"
+            ></ul>
+            <div
+              id="products-pagination"
+              class="flex gap-[2px] justify-center"
+            ></div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <section class="mb-[30px] xl:mb-[52px]">
+      <div class="container">
+        <div
+          class="bg-primaryText rounded-[20px] pt-[32px] px-[24px] pb-[28px] xl:flex xl:justify-between xl:items-center xl:py-[36px] xl:px-[64px]"
+        >
+          <h1
+            class="text-white mb-[32px] xl:mb-0 font-black text-[32px] xl:text-[40px] leading-[35px] xl:max-w-[550px] xl:leading-[45px] xl:font-[350]"
+          >
+            STAY UPTO DATE ABOUT OUR LATEST OFFERS
+          </h1>
+          <form class="xl:basis-[350px]">
+            <div class="relative mb-[12px]">
+              <input
+                type="email"
+                class="w-full h-[42px] pr-[12px] py-[12px] pl-[48px] rounded-[62px]"
+                placeholder="Enter your email address"
+              />
+              <svg
+                class="absolute top-[50%] -translate-y-[10px] left-[16px]"
+                width="20"
+                height="20"
+              >
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </div>
+            <button
+              type="submit"
+              class="w-full h-[42px] bg-white rounded-[62px] flex p-[12px] font-medium justify-center"
+            >
+              Subscribe to Newsletter
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pb-[20px] xl:pb-[80px]">
+      <div class="container">
+        <div
+          class="pb-[40px] mb-[16px] xl:mb-[20px] xl:pb-[50px ] border-b border-grey_10 xl:flex"
+        >
+          <div class="mb-[24px] xl:mb-0 xl:basis-[250px] xl:mr-auto">
+            <a
+              href="#"
+              class="text-[29px] xl:text-[34px] font-black mb-[14px] block"
+              >VOODOO.CO</a
+            >
+            <p class="text-grey_60 mb-[20px]">
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+            <a href="#">
+              <svg width="148" height="28">
+                <use href="./images/sprite.svg#icon-socials"></use>
+              </svg>
+            </a>
+          </div>
+          <ul
+            class="grid grid-rows-2 grid-cols-2 gap-[40px] xl:gap-[108px] xl:grid-cols-4 xl:grid-rows-1 xl:text-[16px]"
+          >
+            <li>
+              <h3 class="font-medium tracking-[3px] uppercase mb-[16px]">
+                Company
+              </h3>
+              <ul class="flex flex-col gap-[16px] text-grey_60">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Works </a></li>
+                <li><a href="#">Career </a></li>
+              </ul>
+            </li>
+            <li class="basis-[121px]">
+              <h3 class="font-medium tracking-[3px] uppercase mb-[16px]">
+                HELP
+              </h3>
+              <ul class="flex flex-col gap-[16px] text-grey_60">
+                <li>
+                  <a href="#">Customer Support</a>
+                </li>
+                <li><a href="#">Delivery Details</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="font-medium tracking-[3px] uppercase mb-[16px]">
+                FAQ
+              </h3>
+              <ul class="flex flex-col gap-[16px] text-grey_60">
+                <li><a href="#">Account </a></li>
+                <li><a href="#">Manage Deliveries</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Payment</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="font-medium tracking-[3px] uppercase mb-[16px]">
+                RESOURCES
+              </h3>
+              <ul class="flex flex-col gap-[16px] text-grey_60">
+                <li><a href="#">Free eBook</a></li>
+                <li><a href="#">Development Tutorial</a></li>
+                <li><a href="#">How to - Blog</a></li>
+                <li><a href="#">Youtube Playlist</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center xl:flex xl:justify-between xl:items-center">
+          <p class="text-grey_60 mb-[17px] xl:mb-0">
+            Shop.co © 2000-2023, All Rights Reserved
+          </p>
+          <ul class="flex items-center gap-[10px] justify-center">
+            <li>
+              <a href="#"><img src="./images/visa.svg" alt="Visa" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><a href="#"
+                  ><img src="./images/mastercard.svg" alt="Mastercard" /></a
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><a href="#"><img src="./images/payPal.svg" alt="Pay Pal" /></a
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><a href="#"
+                  ><img src="./images/applePay.svg" alt="Applepay" /></a
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><a href="#"
+                  ><img src="./images/googlePay.svg" alt="google pay" /></a
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="backdrop pt-[80px] xl:pt-[158px] overflow-y-scroll hidden"
+    ></div>
+  </body>
+</html>

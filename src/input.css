@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.product-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tui-ico-last {
+  display: none;
+}
+
+.tui-ico-first {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.product-item__color-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.product-item__color-input:checked + span::after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('../images/checked.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.product-item__size-button {
+  display: block;
+  white-space: nowrap;
+  padding: 10px 20px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  border-radius: 62px;
+  background: #f0f0f0;
+  height: 38px;
+  cursor: pointer;
+}
+
+.product-item__size-input:checked + span {
+  color: #fff;
+  font-weight: 500;
+  background: #000;
+}
+
+.product-item__element-button {
+  display: block;
+  white-space: nowrap;
+  padding: 10px 20px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  border-radius: 62px;
+  background: #f0f0f0;
+  height: 38px;
+  cursor: pointer;
+}
+
+.product-item__element-button::first-letter {
+  text-transform: uppercase;
+}
+
+.product-item__element-input:checked + span {
+  color: #fff;
+  font-weight: 500;
+  background: #000;
+}

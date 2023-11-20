@@ -14,6 +14,7 @@ const SIZE_VALUES = {
 };
 
 const createRecomendationsMarkup = async id => {
+  //
   // const recomendations = await axios.get(
   //   `/recommendations/products.json?product_id=${id}&limit=4`
   // );
